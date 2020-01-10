@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form>
+
+      <div class="row">
+
+        <div class="col-xl-10 form-group">
+          <label for="name">Message</label>
+          <input type="text" id="name" class="form-control" #userMessage>
+        </div>
+        <div class="col-xl-2 form-group">
+          <button class="btn btn-success" type="submit"  (click)="onPushSend()">Send</button>
+        </div>
+        <div class="col-xl-2 form-group">
+            <button class="btn btn-danger" type="submit" (click)="onPushClear()">Clear Chat</button>
+          </div>
+
+      </div>
+
+
+
+    </form>
+
+  </div>
+</div>

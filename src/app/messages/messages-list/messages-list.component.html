@@ -1,0 +1,20 @@
+
+<div class="row">
+    <div class="col-xs-12">
+      <div #scroll style="width: max; height: 400px; background-color: #eee; 
+      overflow: scroll; padding: 4px;  border: 1px solid #ccc;">
+       
+        <app-message *ngFor="let message of messages" [message]="message"
+               (messageAdded)="onMessageAdded($event)">
+        </app-message>
+      
+      </div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+
+    <app-message-push (messageAdded)="onMessageAdded($event)" (clearChatRequest)="clearChat()"></app-message-push>
+  </div>
+</div>
